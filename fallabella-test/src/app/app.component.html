@@ -1,0 +1,21 @@
+<form id="contact" #testForm = "ngForm" (ngSubmit) = "onSubmit(testForm.value) ">
+  <div class="container">
+    <div class="head">
+      <h2>{{title}}</h2>
+    </div>
+
+    <input type="text" name="rut" placeholder="Rut" ngModel/><br />
+    <input type="text" name="nombres" placeholder="Nombres" ngModel/><br />
+    <input type="text" name="apellidos" placeholder="Apellidos" ngModel/><br />
+    <input type="tel" name="telefono" placeholder="Teléfono" ngModel/><br />
+    <input type="email" name="email" placeholder="Email" ngModel/><br />
+    <input type="file" name="imagen" accept="image/*" image="image" (change)="getFiles($event)" ngModel/><br />
+
+    <button id="submit" type="submit">
+      Enviar
+    </button>
+    <button id="reset" type="reset">
+      Limpiar
+    </button>
+  </div>
+</form>

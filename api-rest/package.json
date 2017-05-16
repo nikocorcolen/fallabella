@@ -1,0 +1,25 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "Proyecto API REST EXPRESS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Maturana",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "connect-busboy": "0.0.2",
+    "connect-multiparty": "^2.0.0",
+    "easy-file-manager": "^0.1.3",
+    "express": "^4.15.2",
+    "express-fileupload": "^0.1.3",
+    "formidable": "^1.1.1",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
